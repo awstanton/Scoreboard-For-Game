@@ -12,7 +12,7 @@ package cse360assign3;
 /**
  * Assignment 3 for CSE 360
  * @author Andrew Stanton, PIN: 817
- * @version second version, February 21,2016
+ * @version third version, February 22, 2016
  */
 public class Calculator {
 
