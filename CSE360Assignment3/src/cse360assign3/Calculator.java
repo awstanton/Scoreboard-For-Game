@@ -1,7 +1,9 @@
-// following source was used for reminder on how to generate JUNIT test cases:
-// https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml
-// the following video was used to help with using Git and Github:
-// https://www.youtube.com/watch?v=r5C6yXNaSGo
+/* Sources:
+The following source was used for reminder on how to generate JUNIT test cases:
+	https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml
+The following video was used to help with using Git and Github:
+	https://www.youtube.com/watch?v=r5C6yXNaSGo
+*/
 
 package cse360assign3;
 
@@ -13,12 +15,23 @@ package cse360assign3;
 public class Calculator {
 
 	private int total;
+	private String history;
 	
 	/**
-	 * Calculator constructor that initializes total
+	 * Calculator constructor that initializes total and history
 	 */
 	public Calculator () {
-		total = 0;  // not needed - included for clarity
+		total = 0;
+		history = "0";
+	}
+	
+	/**
+	 * updates the history by concatenating history string with operator  and value all separated by spaces
+	 * @param value the integer used to update total
+	 * @param operator operator of the operation that was performed
+	 */
+	public void updateHistory (int value, String operator) {
+		history = history + " " + operator + " " + value;
 	}
 	
 	/**
@@ -35,6 +48,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total = total + value;
+		updateHistory(value, "+");
 	}
 	
 	/**
@@ -43,6 +57,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total = total - value;
+		updateHistory(value, "-");
 	}
 	
 	/**
@@ -51,6 +66,7 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total = total * value;
+		updateHistory(value, "*");
 	}
 	
 	/**
@@ -64,6 +80,7 @@ public class Calculator {
 		else {
 			total = total / value;
 		}
+		updateHistory(value, "/");
 	}
 	
 	/**
@@ -71,6 +88,6 @@ public class Calculator {
 	 * @return string of history of calculator operations
 	 */
 	public String getHistory () {
-		return "";
+		return history;
 	}
 }
