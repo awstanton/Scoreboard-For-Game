@@ -3,6 +3,8 @@ The following source was used for reminder on how to generate JUNIT test cases:
 	https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml
 The following video was used to help with using Git and Github:
 	https://www.youtube.com/watch?v=r5C6yXNaSGo
+Another source:
+	"Creating JUNIT Tests" powerpoint on Blackboard
 */
 
 package cse360assign3;
