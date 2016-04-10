@@ -13,6 +13,9 @@ package cse360assign3;
  * Assignment 3 for CSE 360
  * @author Andrew Stanton, PIN: 817
  * @version third version, February 22, 2016
+ * 
+ * URL to github repository:
+ * https://github.com/dstanto2/CSE360Assignment3
  */
 public class Calculator {
 
