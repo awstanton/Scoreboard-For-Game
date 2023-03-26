@@ -1,24 +1,5 @@
-/* Sources:
-The following source was used for reminder on how to generate JUNIT test cases:
-	https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml
-The following video was used to help with using Git and Github:
-	https://www.youtube.com/watch?v=r5C6yXNaSGo
-Another source:
-	"Creating JUNIT Tests" powerpoint on Blackboard
-*/
-
 package cse360assign3;
 
-
-
-/**
- * Assignment 3 for CSE 360
- * @author Andrew Stanton, PIN: 817
- * @version third version, February 22, 2016
- * 
- * URL to github repository:
- * https://github.com/dstanto2/CSE360Assignment3
- */
 public class Calculator {
 
 	private int total;
